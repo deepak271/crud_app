@@ -1,0 +1,26 @@
+ <!-- include header -->
+ <%- include('includes/header')%>
+  
+ <!-- main -->
+ <div class="main">
+    <a href="/add-user">New User <i class="fa-solid fa-user"></i></a>
+  </div>
+  <div class="tab">
+      <table  class="tbl">
+          <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>@email</th>
+          <th>Gender</th>
+          <th>status</th>
+          <th>action</th>
+          </tr>
+          <tbody>
+          <%-include('includes/show')%>
+          </tbody>
+      </table>
+  </div>
+ </div>
+
+ <!-- footer -->
+ <%-include('includes/footer')%>

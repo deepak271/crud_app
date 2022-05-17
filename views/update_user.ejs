@@ -1,0 +1,57 @@
+ <!-- include header -->
+ <%- include('includes/header')%>
+
+<!-- main -->
+<div class="main">
+    <div class="filter">
+        <a href="/"><i class="fa-solid fa-angles-left"></i>All Users</a>
+    </div>
+  </div>
+  <div class="title">
+      <h1 class="txt-ttitle">Update User</h1>
+      <span class="txt-light">use below form to update an account</span>
+  </div>
+
+<!-- main -->
+<form method="post" id="update_frm">
+    <div class="new_user">
+        <div class="form-grp">
+            <label for="name" class="txt-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" id="name" name="name" placeholder="Mark ss">
+        </div>
+        <div class="form-grp">
+          <label for="email" class="txt-light">Email</label>
+          <input type="text" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-grp">
+          <label for="gender" class="txt-light">Gender</label>
+          <div class="radio">
+              <input type="radio" id="male" name="gender" value="Male">
+          <label for="male" class="txt-light">Male</label>
+          </div>
+          <div class="radio">
+              <input type="radio" id="female" name="gender" value="Female">
+           <label for="female" class="txt-light">Female</label>
+          </div>
+        </div>
+        <div class="form-grp">
+          <label for="status" class="txt-light">Status</label>
+          <div class="radio">
+              <input type="radio" id="active" name="status" value="Active">
+          <label for="active" class="txt-light">Active</label>
+          </div>
+          <div class="radio">
+              <input type="radio" id="inactive" name="status" value="Inactive">
+           <label for="inactive" class="txt-light">Inactive</label>
+          </div>
+        </div>
+        <div class="form-grp">
+            <button type="submit" class="btn">Save</button>
+        </div>
+    </div>
+</form>
+</div>
+
+ <!-- footer -->
+ <%-include('includes/footer')%>

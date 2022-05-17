@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+/* font-family: 'Barlow', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+.cont{
+    max-width: 1024px;
+    margin: auto;
+}
+.header{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #2bb2e7;
+    padding: 1rem 0;
+}
+.main{
+    margin-top: 6rem;
+    font-size: 1rem;
+
+}
+div.main>a{
+    box-shadow: .8px .8px  #74ac74;
+}
+.tab{
+    margin: 2em 0;
+    font-family: 'Barlow', sans-serif;
+}
+.tab{
+    width: 100%;
+}
+.tbl{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.tbl th,.tbl td{
+    text-align: center;
+    border-top: 1px solid #d6d6e7;
+}
+.tbl td>a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: .2em ;
+}
+.tbl tr:hover{
+    background-color: #16efef;
+}
+.tbl th{
+    background-color:#0b1015;
+    color: #fff;
+}
+@media screen and (max-width:800px) {
+    .tbl,th ,td ,tr {
+        display: block;
+    }
+    th{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{
+        border: 1px solid #424444;
+    }
+    td{
+        border: none;
+        border-bottom:#424444 ;
+    }
+}
+
+/*add user and update user*/
+.title
+{
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+}
+.txt-title{
+    padding: .5em 0 ;
+}
+.txt-light{
+    color: #1b191b;
+}
+.new_user{
+    max-width: 500px;
+    margin: auto;
+}
+#new_frm .form-grp,
+#update_frm .form-grp{
+    margin:.4em 0;
+}
+#new_frm .form-grp input[type="text"],
+#update_frm .form-grp input[type="text"]
+{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid #424444;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+#new_frm .form-grp .radio,
+#update_frm .form-grp .radio
+{
+    display: inline;
+    margin: 1em 2em;
+}
+#new_frm .form-grp .btn,
+#update_frm .form-grp .btn{
+width: 100%;
+padding: .5em 1em;
+border: none;
+background-color: #4FFFB0;
+cursor: pointer;
+font-family: 'PT Sans', sans-serif;
+border-radius: .2em;
+margin: .5em 0;
+}
+#new_frm .form-grp .btn:hover,
+#update_frm .form-grp .btn:hover{
+    background-color: #006400;
+    color: #fff;
+}
